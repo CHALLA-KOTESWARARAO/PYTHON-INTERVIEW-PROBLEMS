@@ -34,4 +34,3 @@ def same(st):
 print(same('rebeossi'))
 
 
-

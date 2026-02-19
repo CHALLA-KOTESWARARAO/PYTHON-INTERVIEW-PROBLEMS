@@ -13,11 +13,15 @@
 #     num1//=10
 # print("armstrong" if arm==num2 else "not armstrong") 
 
-a=121
-le=len(str(a))
-arm=0
-while a:
-    n=a%10 
-    arm+=n**le 
-    a//=10 
-print(arm)
+def arm(num):
+    le=len(str(num))
+    onum=num
+    arm=0
+    while num:
+        d=num%10
+        arm+=d**le 
+        num//=10
+    if onum==arm:
+        return f"{onum} is armstrong"
+    return f"{onum} is not strong"
+print(arm(252))
